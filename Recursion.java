@@ -1,6 +1,4 @@
 public class Recursion {
-
-   public static int answer;
    
    public static void main(String[] args) {
    
@@ -19,7 +17,7 @@ public class Recursion {
       if (n == 1)
          return 1;
    
-      return answer = doFactorial (n - 1) * n;         
+      return doFactorial (n - 1) * n;         
    }
    
    public int sum(int n) {
@@ -27,6 +25,7 @@ public class Recursion {
       if (n == 1)
          return 1;
    
-      return answer = sum (n - 1) + n;        
+      return sum (n - 1) + n;        
    }  
 }
+
