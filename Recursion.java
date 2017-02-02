@@ -1,23 +1,32 @@
 public class Recursion {
 
+   public static int answer;
+   
    public static void main(String[] args) {
    
       Recursion recursion = new Recursion();
       
-      System.out.println(recursion.doFactorial(5));
+      int input = Integer.parseInt(args[0]);
+      
+      System.out.println("Sum = " + recursion.sum(input));
+      
+      System.out.println("Factorial = " + recursion.doFactorial(input));
          
    }
    
    public int doFactorial(int n) {
    
-      int answer;
+      if (n == 1)
+         return 1;
+   
+      return answer = doFactorial (n - 1) * n;         
+   }
+   
+   public int sum(int n) {
    
       if (n == 1)
          return 1;
    
-      answer = doFactorial (n - 1) * n;
-       
-      return answer;         
-   }
-   
+      return answer = sum (n - 1) + n;        
+   }  
 }
