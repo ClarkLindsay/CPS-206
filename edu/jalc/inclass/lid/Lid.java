@@ -4,5 +4,13 @@ public class Lid {
 
    private double heigth;
    
-   private boolean isAttached;      
+   private boolean isAttached;
+   
+   public double getHeigth() {} 
+   
+   public boolean isAttached() {}
+   
+   public Lid attach() {}
+   
+   public Lid detach() {}     
 }
