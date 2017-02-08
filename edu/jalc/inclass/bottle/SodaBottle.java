@@ -6,9 +6,17 @@ A bottle class
 
 class SodaBottle {
    
-   private final double capacity = 20.0;
+   private double capacity = 20.0;
    
-   double getCapacity() {
-      return capacity;
+   private SodaBottle() {
+      setCapacity(0);
+   }
+   
+   SodaBottle(double capacity) {
+      setCapacity(capacity);
+   }
+   
+   void setCapacity(double capacity) {
+      this.capacity = capacity;
    }
 }
