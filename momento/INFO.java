@@ -1,0 +1,1 @@
+enum INFO{INFO}

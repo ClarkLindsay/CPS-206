@@ -1,7 +1,7 @@
-public class Momento{
+public class Message{
    private State state;
    
-   public Momento(State state){
+   public Message(State state){
       this.state = state;
    }
    
@@ -12,4 +12,5 @@ public class Momento{
    public String toString(){
       return state.toString();
    }
+
 }
