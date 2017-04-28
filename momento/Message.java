@@ -1,16 +1,14 @@
-public class Message{
-   private State state;
-   
-   public Message(State state){
-      this.state = state;
-   }
-   
-   public State getState(){
-      return state;
-   }
-   
-   public String toString(){
-      return state.toString();
-   }
+public class Message {
 
+	private final String message;
+	private final State state;
+
+	public Message(String message, State state){
+		this.message = message;
+		this.state = state;
+	}
+
+	public String toString(){
+		return this.state + " :: " + this.message;
+	}
 }
